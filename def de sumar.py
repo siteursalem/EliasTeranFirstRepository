@@ -1,7 +1,13 @@
 def sumar(a,b)
     return a+b
 
-n1 =int(input("ingrese valor"))
-m2 = int(input("ingrese sehgundo valor"))
+while True:
+    try:
+        n1 =int(input("ingrese valor"))
+        n2 = int(input("ingrese sehgundo valor"))
+        break
+       
+    except:
+        print("ingrese valores numericos")
 
 print(sumar(n1,n2))
